@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/orange4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/header_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Friend List"
+                android:textSize="23sp"
+                android:fontFamily="@font/arkhip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBrown"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_friendlist"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBrown"
+            android:paddingTop="5dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerHorizon"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/interest"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orange1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="250dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:text="Daily Activity"
+                android:textSize="23sp"
+                android:fontFamily="@font/arkhip"
+                android:background="@drawable/rounded_title"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBrown"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerAct"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

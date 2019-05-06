@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/orange4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/header_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="My Gallery"
+                android:textSize="23sp"
+                android:fontFamily="@font/arkhip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBrown"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="5dp"
+            android:id="@+id/listPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</RelativeLayout>

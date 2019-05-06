@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">IntroSliderDemo</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Home</string>
+    <string name="slide_1_desc">The Home page contains a brief description of myself</string>
+    <string name="slide_2_title">Gallery</string>
+    <string name="slide_2_desc">There are my photos, music and videos that I like</string>
+    <string name="slide_3_title">Profile</string>
+    <string name="slide_3_desc">To contact me, can be seen on the profile page</string>
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_daily">Daily</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_music">Music</string>
+    <string name="title_profile">Profile</string>
+</resources>

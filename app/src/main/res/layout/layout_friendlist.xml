@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    android:orientation="horizontal"
+    android:background="@color/colorBrown">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="@color/colorBrown"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_border" />
+        <TextView
+            android:id="@+id/txtFriendName"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="echo name"
+            android:layout_below="@id/imgPhoto"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/dot_active_screen1"
+            android:layout_marginBottom="5dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeMaxTextSize="15sp"
+            android:fontFamily="@font/roonasans"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
